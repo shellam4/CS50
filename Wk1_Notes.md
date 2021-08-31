@@ -12,7 +12,7 @@ source code -> compiler -> machine code (binary language)
 `./hello` will run the file  
 **always compile before running the file**  
 got an error? run `help50 <command>` to see what the problem is  
-ugly code? run `style50 <filename>` to see how to improve it
+ugly code? run `style50 <filename>` to see how to improve it. 
 is the code correct? run `check50 <filename path>` to check it
 
 ## Syntax
