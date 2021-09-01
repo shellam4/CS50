@@ -35,42 +35,48 @@ Variables: what the placeholder is set to
 `\n` adds a new line after the output  
 `//` adds a comment to say what the purpose of this code is  
 
-### Value Types
+#### Value Types
 - bool: true or false 
 - int: only use 32 bits total, supports simple negative and positive numbers  
 - float: a fraction or decimal
 - double:
 - string:  
-- char:  
+- char: 1 character  
 
 #### Printing
-- %c prints a  
-- %f prints a  
+- %c prints a char  
+- %f prints a float  
 - %i prints an integer  
 - %li prints a long integer  
 - %s prints a string
 
 #### Operators 
-- +  
-- -  
-- *  
+- plus  
+- minus  
+- times (*)  
 - || is OR 
 - && is and
 
 Cast: will change the value type of a variable  
 
-Scratch to C: set counter to 0 -> `int counter = 0;`  
+Scratch to C: set counter to 0 -> `int counter = 0;`   
 Scratch to C: change counter by 1 -> `counter = counter + 1;` OR `counter += 1;` OR `counter++;`  
 
 #### Conditions  
-Scratch to C: if x < y then say it -> ` if (x < y) { printf("x is less than y\n"); }`
-Scratch to C: else if x > y then say its not -> `else if (x > y) { printf("x is greater than y\n"); }`
-Scratch to C: else if x = y then say their equal -> `else { printf("x is equal to y\n"); }`
+Scratch to C: if x < y then say it -> ` if (x < y) { printf("x is less than y\n"); }`  
+Scratch to C: else if x > y then say its not -> `else if (x > y) { printf("x is greater than y\n"); }`  
+Scratch to C: else if x = y then say their equal -> `else { printf("x is equal to y\n"); }`  
 
 #### Loops
-Scratch to C: an infinite loop: forever say hello, world -> `while (true) { printf("hello, world"); }`  
-Scratch to C: repeat hello, world 50 times -> `int i = 0; while (i < 50) { printf("hello\n"); i++; }`
-Scratch to C: (much better) repeat hello, world 50 times -> `for (int i = o; i < 50; i++) {printf("hello\n"); }`
+Scratch to C: an infinite loop: forever say hello, world -> `while (true) { printf("hello, world"); }`    
+Scratch to C: repeat hello, world 50 times -> `int i = 0; while (i < 50) { printf("hello\n"); i++; }`  
+Scratch to C: (better style) repeat hello, world 50 times -> `for (int i = o; i < 50; i++) {printf("hello\n"); }`  
 
-### Abstraction
+#### Abstraction + Scope
+Abstraction: To declare/define a function that can be recalled by the main function.  
+Scope: Declare a variable outside the loop so can exist outside the loop and be compared inside a do while loop 
 
+#### Limitations (what computers aren't good at)
+Programs are stored in hardware like ram when they are running. Memory allows only so much at once.  
+2 billion plus 2 billion doesn't work for intergers   
+computing time began january 1st 1970 and the 4 billionth second will be hit on january 19th 2038. 
