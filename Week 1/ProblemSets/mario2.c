@@ -7,7 +7,7 @@ int main() {
     do {
         height = get_int("Height: ");
     }
-    while(height % 2 != 0 || height > 8 || height < 1);
+    while(height > 8 || height <= 0);
     
     // print the pyramid
     for (int row = 1; row <= height; row++) {
