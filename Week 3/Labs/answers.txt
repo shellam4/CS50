@@ -1,0 +1,20 @@
+sort1 uses: bubble short
+
+How do you know?: This file took more time to complete the random and reversed sorts
+- took 0.176s to sort random5000.txt
+- took 0.129s to sort reversed5000.txt
+- took 0.014s to sort sorted5000.txt
+
+sort2 uses: merge sort
+
+How do you know?: This file took the least time to complete all sorts
+- took 0.012s to sort random5000.txt
+- took 0.012s to sort reversed5000.txt
+- took 0.015s to sort sorted5000.txt
+
+sort3 uses: selection sort
+
+How do you know?: This file took the longest to complete every sort.
+- took 0.209s to sort random5000.txt
+- took 0.040s to sort reversed5000.txt
+- took 0.046s to sort sorted5000.txt
