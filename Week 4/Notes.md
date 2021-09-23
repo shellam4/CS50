@@ -13,5 +13,25 @@ Adding or subtracting from a pointer moves it by a multiple of the size of the d
 have a pointer to an array of 4-byte integers. Incrementing this pointer will increment its value by 4 (the size of the element).
 #### UH OH  
 What is a segmentation fault? Means we have touched a segment of memory that we shouldn't have accessed.  
+
 Valgrind is used to find where this memory bug is happening 
--  `valgrind ./memory`
+`valgrind ./memory`
+sizeof() means how many bytes  
+
+Garbage value means there is nothing usable in the memory address. These lead to segmentation faults/crashes.  
+  
+#### Memory 
+Divisions: 
+machine code   
+globals  
+heap (malloc)  
+stack (calling functions)  
+
+Stack overflow is when the stack goes over the heap(available memory)
+Buffer overflow is when you go beyond the chunk of memory that has been allocated like video buffering means a chunk of memory is filled up   
+
+#### Old school functions (not self defensive)
+scanf   
+
+#### file I/O  
+the act of taking input and output from files (fopen, fread, fclose)
