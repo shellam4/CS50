@@ -1,4 +1,8 @@
-// Modifies the volume of an audio file
+/* Modifies the volume of an audio file
+Overview:
+1. Copy 1 44-byte header by unsigned 8 bit
+2. Copy many 2-byte samples by signed 16 bit, multiply sample w factor
+*/
 
 #include <stdint.h>
 #include <stdio.h>
@@ -34,8 +38,18 @@ int main(int argc, char *argv[])
     float factor = atof(argv[3]);
 
     // TODO: Copy header from input file to output file
+    uint8_t header[HEADER_SIZE];
+    fread(header, sizeof(uint8_t), HEADER_SIZE, input);
+    fwrite(header, sizeof(uint8_t), HEADER_SIZE, output);
 
     // TODO: Read samples from input file and write updated data to output file
+    int16_t buffer;
+    while(fread(&buffer, sizeof(int16_t), 1, input))
+    {
+        //update volume by multiplying buffer by the factor and writing the new volume to the output file
+        buffer = buffer * factor;
+        fwrite(&buffer, sizeof(int16_t), 1, output);
+    }
 
     // Close files
     fclose(input);
