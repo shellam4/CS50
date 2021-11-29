@@ -1,4 +1,6 @@
 /*
+Objective: Write a program to modify the volume of an audio file.
+
 helpers.h
 Next, take a look at helpers.h. This file is quite short, and just provides the function prototypes for the functions you saw earlier.
 Here, take note of the fact that each function takes a 2D array called image as an argument, where image is an array of height many rows, and each row is itself another array of width many RGBTRIPLEs. So if image represents the whole picture, then image[0] represents the first row, and image[0][0] represents the pixel in the upper-left corner of the image.
